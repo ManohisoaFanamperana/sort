@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualisation des Tris</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="https://fanamperana.netlify.app/projets.html" class="retour">
+            ← Retour à mes projets
+        </a>
+    </header>
+
+    <h1>Visualisation des Algorithmes de Tri</h1>
+
+    <label>Choisir un algorithme :</label>
+    <select id="algo">
+        <option value="bubble">Tri à bulles</option>
+        <option value="insertion">Tri par insertion</option>
+    </select>
+
+    <label>Tableau à trier :</label>
+    <input id="array" value="5,3,8,4,2">
+
+    <button onclick="trier()">Lancer</button>
+
+    <div id="visualisation"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

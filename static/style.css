@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 50px;
+}
+
+#visualisation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 40px;
+    gap: 5px;
+}
+
+.bar {
+    width: 20px;
+    background: #2563eb;
+    border-radius: 4px;
+    transition: height 0.3s;
+}
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.retour {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.retour:hover {
+    background: #1e40af;
+}
+
